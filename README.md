@@ -99,3 +99,11 @@ The project follows the standard Android project structure:
 1. Clone the repository:
    ```bash
    git clone https://github.com/marclopezalonso/juego-parejas-android.git
+
+---
+
+## 🌍 Language
+
+This README is also available in Spanish.
+
+➡️ [Read this documentation in Spanish](README.es.md)
