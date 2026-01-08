@@ -358,7 +358,7 @@ public class MainActivity extends AppCompatActivity {
             Type type = new TypeToken<ArrayList<Integer>>(){}.getType();
             ArrayList<Integer> cartasGuardadas = gson.fromJson(jsonCartas, type);
 
-            if (cartasGuardadas != null && cartasGuardadas.size() == 60) { // 20 cartas * 3 datos
+            if (cartasGuardadas != null && cartasGuardadas.size() == 60) {
                 for (int i = 0; i < 20; i++) {
                     int imagenId = cartasGuardadas.get(i * 3);
                     boolean volteada = cartasGuardadas.get(i * 3 + 1) == 1;
