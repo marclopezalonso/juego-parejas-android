@@ -100,3 +100,10 @@ El proyecto sigue la estructura estándar de un proyecto Android:
    ```bash
    git clone https://github.com/marclopezalonso/juego-parejas-android.git
 
+---
+
+## 🌍 Idioma
+
+Esta documentación también está disponible en inglés.
+
+➡️ [Leer esta documentación en inglés](README.md)
