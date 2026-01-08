@@ -1,0 +1,25 @@
+<resources>
+    <style name="PanelTitulo">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#BB86FC</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="BotonPrincipal">
+        <item name="android:backgroundTint">#BB86FC</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TarjetaCartaGrande">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

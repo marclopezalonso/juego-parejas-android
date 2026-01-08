@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#2E1B47"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/panelInfo"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="#1A102F">
+
+        <TextView
+            android:text="Jugadores"
+            style="@style/PanelTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/jugador1"
+            android:hint="Nombre jugador 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#BB86FC"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/jugador2"
+            android:hint="Nombre jugador 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#BB86FC"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:text="Puntuación"
+            style="@style/PanelTitulo"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/puntosJ1"
+            android:text="Jugador 1: 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E1D8F0" />
+
+        <TextView
+            android:id="@+id/puntosJ2"
+            android:text="Jugador 2: 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E1D8F0" />
+
+        <TextView
+            android:text="Ranking"
+            style="@style/PanelTitulo"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/listRanking"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#3A2B5D" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnIniciar"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="INICIA"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#BB86FC"
+                android:layout_marginEnd="2dp"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="GUARDA"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#3A2B5D"
+                android:layout_marginHorizontal="2dp"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/btnCargar"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="CARGA"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#3A2B5D"
+                android:layout_marginStart="2dp"
+                android:padding="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/areaTablero"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#3A2B5D">
+
+        <GridLayout
+            android:id="@+id/tablero"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:rowCount="5"
+            android:columnCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <ImageView android:id="@+id/card0" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card1" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card2" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card3" style="@style/TarjetaCartaGrande" />
+
+            <ImageView android:id="@+id/card4" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card5" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card6" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card7" style="@style/TarjetaCartaGrande" />
+
+            <ImageView android:id="@+id/card8" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card9" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card10" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card11" style="@style/TarjetaCartaGrande" />
+
+            <ImageView android:id="@+id/card12" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card13" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card14" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card15" style="@style/TarjetaCartaGrande" />
+
+            <ImageView android:id="@+id/card16" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card17" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card18" style="@style/TarjetaCartaGrande" />
+            <ImageView android:id="@+id/card19" style="@style/TarjetaCartaGrande" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
