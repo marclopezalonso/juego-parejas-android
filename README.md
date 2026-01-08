@@ -98,4 +98,4 @@ The project follows the standard Android project structure:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/juego-parejas-android.git
+   git clone https://github.com/marclopezalonso/juego-parejas-android.git
